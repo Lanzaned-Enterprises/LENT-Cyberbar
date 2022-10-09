@@ -53,7 +53,7 @@
 	['weapon_fang']          		 = {['name'] = 'weapon_fang',         	['label'] = 'L115A1',             	['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      ['image'] = 'rifle3.png',     ['unique'] = true,         ['useable'] = false,     ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
 	['weapon_lynx']          		 = {['name'] = 'weapon_lynx',         	['label'] = 'L115A1',             	['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      ['image'] = 'rifle4.png',     ['unique'] = true,         ['useable'] = false,     ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
 	['weapon_rain']          		 = {['name'] = 'weapon_rain',         	['label'] = 'L115A1',             	['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      ['image'] = 'rifle1.png',     ['unique'] = true,         ['useable'] = false,     ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
-    ['weapon_vandal']          		 = {['name'] = 'weapon_vandal',         ['label'] = 'Vandal',             	['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '762_ammo',      ['image'] = 'rifle6.png',     ['unique'] = true,         ['useable'] = false,     ['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
+    	['weapon_vandal']          		 = {['name'] = 'weapon_vandal',         ['label'] = 'Vandal',             	['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '762_ammo',      ['image'] = 'rifle6.png',     ['unique'] = true,         ['useable'] = false,     ['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
 	['sniper_rifle1'] 				 = {['name'] = 'sniper_rifle1',			['label'] = 'Cyber Bar Rifle',		['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle1.png',		['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	['combinable'] = nil,		['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
 	['sniper_rifle2'] 				 = {['name'] = 'sniper_rifle2',			['label'] = 'Cyber Bar Rifle',		['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle2.png',		['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	['combinable'] = nil,		['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
 	['sniper_rifle3'] 				 = {['name'] = 'sniper_rifle3',			['label'] = 'Cyber Bar Rifle',		['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle3.png',		['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	['combinable'] = nil,		['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
@@ -146,7 +146,7 @@
 	[`weapon_lynx`]          		= {['name'] = 'weapon_lynx',         	['label'] = 'L115A1',                    ['ammotype'] = 'AMMO_SNIPER',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 	[`weapon_rain`]          		= {['name'] = 'weapon_rain',         	['label'] = 'L115A1',                    ['ammotype'] = 'AMMO_SNIPER',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 ```
-- Add tge following to `qb-weapons/config.lua`
+- Add the following to `qb-weapons/config.lua`
 ```lua
     ['weapon_vandal']           = 0.15,
     ['weapon_awp']              = 0.15,
