@@ -114,7 +114,7 @@ qbMenu.ItemsListCreateable = {
         ["SubTitle"] = "Required: Jager, Gin, Mio Orange",
         ["Icon"] = "fa-solid fa-beer-mug-empty",
         ["ItemAdd"] = QBCore.Shared.Items["promethean"],
-        ["Event"] = "LENT:OPENMENU:HOT:Promethean" -- Change the event aswell or it won't work. Not helping if this is changed.
+        ["Event"] = "LENT:OPENMENU:ALCOHOLIC:Promethean" -- Change the event aswell or it won't work. Not helping if this is changed.
     },
 
     ["cb_rampancy"] = {
@@ -164,7 +164,7 @@ qbMenu.NonAlHotItems = {
         ["SubTitle"] = "Requires: liptontea, water",
         ["Icon"] = "fa-solid fa-mug-hot",
         ["ItemAdd"] = QBCore.Shared.Items["blacktea"],
-        ["Event"] = "LENT:OPENMENU:ALCOHOLIC:BLACKTEA" -- Change the event aswell or it won't work. Not helping if this is changed.
+        ["Event"] = "LENT:OPENMENU:HOT:BLACKTEA" -- Change the event aswell or it won't work. Not helping if this is changed.
     },
     ["greenbobatea"] = {
         ["Header"] = "Green Boba Tea",
