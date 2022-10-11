@@ -326,6 +326,8 @@ end exports('cyberBarRobbery', cyberBarRobbery)
 | Create glass items instead of bottles | ❌ |
 | Recode the Consumables part to account for change mentioned above | ❌ |
 | Restructure some of the files to lower file amount | ❌ |
+| Lower amount of usage in resource profiler | ❌ |
+| Check cop amount before attempting to start the heist | ❌ |
 
 ## Contributors
 |  Rank       |  Member       | ID                 | Qualifications                       |
