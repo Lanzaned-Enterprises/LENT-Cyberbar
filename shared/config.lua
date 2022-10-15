@@ -1,34 +1,39 @@
 Config = {}
-Dependencies = {}
 
--- [[ Script Settings ]] --
-Dependencies.Shop = "inventory"
+-- [[ Blip Settings ]] --
+Config.BlipToggle = true
+Config.BlipID = 484 -- radar_pickup_ghost
+Config.BlipColor = 61 -- Mulberry Pink
+Config.BlipSize = 1.0
+
+-- [[ Cops ]] --
+Config.RequiredCops = 0
 
 -- [[ Item ]] --
 Config.Item = "purple_usb"
 
 -- [[ Bar Items ]] --
-Config.Items = { -- Items found in the ambulance shop for players with the ambulance job to purchase
+Config.Items = {
     label = "Cyberbar Stash",
     slots = 30,
     items = {
-        [1] = { name = "jagermeister", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 1, },
-        [2] = { name = "limesoda", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 2, },
+        [1] = { name = "jagermeister", amount = math.random(50, 100), info = {}, type = "item", slot = 1, },
+        [2] = { name = "limesoda", amount = math.random(50, 100), info = {}, type = "item", slot = 2, },
 
-        [3] = { name = "liptontea", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 3, },
-        [4] = { name = "water_bottle", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 4, },
-        [5] = { name = "sugar", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 5, },
-        [6] = { name = "boba", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 6, },
-        [7] = { name = "milk", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 7, },
-        [8] = { name = "lime", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 8, },
-        [9] = { name = "orange", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 9, },
-        [10] = { name = "strawberry", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 10, },
-        [11] = { name = "blueberry", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 11, },
+        [3] = { name = "liptontea", amount = math.random(50, 100), info = {}, type = "item", slot = 3, },
+        [4] = { name = "water_bottle", amount = math.random(50, 100), info = {}, type = "item", slot = 4, },
+        [5] = { name = "sugar", amount = math.random(50, 100), info = {}, type = "item", slot = 5, },
+        [6] = { name = "boba", amount = math.random(50, 100), info = {}, type = "item", slot = 6, },
+        [7] = { name = "milk", amount = math.random(50, 100), info = {}, type = "item", slot = 7, },
+        [8] = { name = "lime", amount = math.random(50, 100), info = {}, type = "item", slot = 8, },
+        [9] = { name = "orange", amount = math.random(50, 100), info = {}, type = "item", slot = 9, },
+        [10] = { name = "strawberry", amount = math.random(50, 100), info = {}, type = "item", slot = 10, },
+        [11] = { name = "blueberry", amount = math.random(50, 100), info = {}, type = "item", slot = 11, },
 
-        [12] = { name = "mioberrypome", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 12, },
-        [13] = { name = "mioblackcherry", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 13, },
-        [14] = { name = "mioblue", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 14, },
-        [15] = { name = "miorange", price = 0, amount = math.random(50, 100), info = {}, type = "item", slot = 15, },
+        [12] = { name = "mioberrypome", amount = math.random(50, 100), info = {}, type = "item", slot = 12, },
+        [13] = { name = "mioblackcherry", amount = math.random(50, 100), info = {}, type = "item", slot = 13, },
+        [14] = { name = "mioblue", amount = math.random(50, 100), info = {}, type = "item", slot = 14, },
+        [15] = { name = "miorange", amount = math.random(50, 100), info = {}, type = "item", slot = 15, },
     }
 }
 

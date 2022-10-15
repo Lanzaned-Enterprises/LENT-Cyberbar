@@ -7,7 +7,7 @@ author 'Izumi S. <https://discordapp.com/users/871877975346405388>'
 description 'Lananed Development | Cyberbar'
 discord 'https://discord.lanzaned.com'
 github 'https://github.com/Lanzaned-Enterprises/LENT-Cyberbar'
-docs 'https://lanzaned-development.gitbook.io/lanzaned-development-or-documentation/'
+docs 'https://docs.lanzaned.com/'
 
 -- [[ Version ]] --
 version '1.0.0'

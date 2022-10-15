@@ -35,10 +35,6 @@ end)
 -- [[ Stash ]] --
 RegisterNetEvent("LENT:CYBERBAR:OPEN:INGREDIENTS", function()
     if QBCore.Functions.GetPlayerData().job.name == "cyberbar" then
-        if Dependencies.Shop == "jim-shops" then
-            TriggerServerEvent("jim-shops:ShopOpen", "shop", "cyberbar", Config.Items)
-        elseif Dependencies.Shop == "inventory" then
-            TriggerServerEvent("inventory:server:OpenInventory", "shop", "cyberbar", Config.Items)
-        end
+        TriggerServerEvent("inventory:server:OpenInventory", "lent", "cyberbar", Config.Items)
     end
 end)

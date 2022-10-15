@@ -6,17 +6,23 @@ RegisterNetEvent("LENT:TESTING", function()
 end)
 
 RegisterNetEvent("LENT:CYBERBAR:START", function()
-    if QBCore.Functions.GetPlayerData().job.name == "cyberbar" then
-        return
-    else
-        if Objectives.HeistStart then 
-            MissionText("~r~Hector: ~w~Get going! I don't have more for you!", 5000)
+    QBCore.Functions.TriggerCallback('LENT:SERVER:GETCOPS', function(cops)
+        if cops >= Config.RequiredCops then
+            if QBCore.Functions.GetPlayerData().job.name == "cyberbar" then
+                return
+            end
+
+            if Objectives.HeistStart then 
+                MissionText("~r~Hector: ~w~Get going! I don't have more for you!", 5000)
+            else
+                MissionText("~r~Hector: ~w~Here's the USB you will need for the Cyberbar Security", 5000)
+                Objectives.HeistStart = true
+                TriggerServerEvent("LENT:CYBERBAR:GIVE:USB")
+            end
         else
-            MissionText("~r~Hector: ~w~Here's the USB you will need for the Cyberbar Security", 5000)
-            Objectives.HeistStart = true
-            TriggerServerEvent("LENT:CYBERBAR:GIVE:USB")
+            MissionText("~r~SYSTEM: ~w~There is to few cops online for this!", 5000)
         end
-    end
+    end)
 end)
 
 RegisterNetEvent("LENT:CYBERBAR:FINISH", function()

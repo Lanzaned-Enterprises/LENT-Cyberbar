@@ -218,19 +218,7 @@ end exports('cyberBarRobbery', cyberBarRobbery)
 ```
 ```lua
 -- sv_dispatchcodes.lua
-	["nightclubRobbery"] = {
-		displayCode = '10-68', 
-		description = "Attempted Robbery", 
-		radius = 0, 
-		recipientList = {'police', 'bcso', 'doc'}, 
-		blipSprite = 766, 
-		blipColour = 1, 
-		blipScale = 1.5, 
-		blipLength = 2, 
-		sound = "robberysound", 
-		offset = "false", 
-		blipflash = "false"
-	},
+	["nightclubRobbery"] = {displayCode = '10-68', description = "Attempted Robbery", radius = 0, recipientList = {'police', 'bcso', 'doc'}, blipSprite = 766, blipColour = 1, blipScale = 1.5, blipLength = 2, sound = "robberysound", offset = "false", blipflash = "false" },
 ```
 - You can use the following export for the alert `exports["ps-dispatch"]:cyberBarRobbery()`
 - Add the following snippets to `LENT-PedSpawner`
@@ -256,22 +244,22 @@ end exports('cyberBarRobbery', cyberBarRobbery)
 
         -- [[ Do recommand that you use a clothing menu to get the right ID's ]] --
         ["clothing"] = false, -- True if ped = "mp_m_freemode_01" || "mp_f_freemode_01" else leave false
-        ["mother"] = 2, ["father"] = 0, ["mix"] = 1.0,
-        ["hair"] = 19, ["HAIR_Texture"] = 0, ["HAIR_HIGHLIGHT"] = 0,
-        ["hands"] = 1, ["HA_Texture"] = 0,
-        ["undershirts"] = 35, ["U_Texture"] = 0,
-        ["tops"] = 295, ["T_Texture"] = 0,
-        ["kevlar"] = 0, ["K_Texture"] = 0,
-        ["decal"] = 0, ["D_Texture"] = 0,
-        ["accs"] = 0, ["A_Texture"] = 0,
-        ["bags"] = 0, ["B_Texture"] = 0,
-        ["pants"] = 10, ["P_Texture"] = 0,
-        ["shoes"] = 10, ["S_Texture"] = 0,
+        ["mother"] = -1, ["father"] = -1, ["mix"] = 1.0,
+        ["hair"] = -1, ["HAIR_Texture"] = 0, ["HAIR_HIGHLIGHT"] = 0,
+        ["hands"] = -1, ["HA_Texture"] = 0,
+        ["undershirts"] = -1, ["U_Texture"] = 0,
+        ["tops"] = -1, ["T_Texture"] = 0,
+        ["kevlar"] = -1, ["K_Texture"] = 0,
+        ["decal"] = -1, ["D_Texture"] = 0,
+        ["accs"] = -1, ["A_Texture"] = 0,
+        ["bags"] = -1, ["B_Texture"] = 0,
+        ["pants"] = -1, ["P_Texture"] = 0,
+        ["shoes"] = -1, ["S_Texture"] = 0,
         ["eye_COLOR"] = 2,
-        ["makeup"] = 0, ["makeup_OPACITY"] = 0.0, ["makeup_COLOR"] = 0, -- leave opacity at 1.0
-        ["lipstick"] = 0, ["lipstick_OPACITY"] = 0.0, ["lipstick_COLOR"] = 0, -- leave opacity at 1.0
-        ["eyebrows"] = 0, ["eyebrows_OPACITY"] = 0.0, ["eyebrows_COLOR"] = 0, -- leave opacity at 1.0
-        ["beard"] = 7, ["beard_OPACITY"] = 1.0, ["beard_COLOR"] = 1, -- leave opacity at 1.0
+        ["makeup"] = -1, ["makeup_OPACITY"] = 0.0, ["makeup_COLOR"] = 0, -- leave opacity at 1.0
+        ["lipstick"] = -1, ["lipstick_OPACITY"] = 0.0, ["lipstick_COLOR"] = 0, -- leave opacity at 1.0
+        ["eyebrows"] = -1, ["eyebrows_OPACITY"] = 0.0, ["eyebrows_COLOR"] = 0, -- leave opacity at 1.0
+        ["beard"] = -1, ["beard_OPACITY"] = 1.0, ["beard_COLOR"] = 1, -- leave opacity at 1.0
     },
     ["CyberbarHeist2"] = {
         ["coords"] = vector4(-11.34, 6499.67, 31.5, 44.8), -- The start Coordinatos of the first mission
@@ -294,29 +282,29 @@ end exports('cyberBarRobbery', cyberBarRobbery)
 
         -- [[ Do recommand that you use a clothing menu to get the right ID's ]] --
         ["clothing"] = false, -- True if ped = "mp_m_freemode_01" || "mp_f_freemode_01" else leave false
-        ["mother"] = 2, ["father"] = 0, ["mix"] = 1.0,
-        ["hair"] = 19, ["HAIR_Texture"] = 0, ["HAIR_HIGHLIGHT"] = 0,
-        ["hands"] = 1, ["HA_Texture"] = 0,
-        ["undershirts"] = 35, ["U_Texture"] = 0,
-        ["tops"] = 295, ["T_Texture"] = 0,
-        ["kevlar"] = 0, ["K_Texture"] = 0,
-        ["decal"] = 0, ["D_Texture"] = 0,
-        ["accs"] = 0, ["A_Texture"] = 0,
-        ["bags"] = 0, ["B_Texture"] = 0,
-        ["pants"] = 10, ["P_Texture"] = 0,
-        ["shoes"] = 10, ["S_Texture"] = 0,
+        ["mother"] = -1, ["father"] = -1, ["mix"] = 1.0,
+        ["hair"] = -1, ["HAIR_Texture"] = 0, ["HAIR_HIGHLIGHT"] = 0,
+        ["hands"] = -1, ["HA_Texture"] = 0,
+        ["undershirts"] = -1, ["U_Texture"] = 0,
+        ["tops"] = -1, ["T_Texture"] = 0,
+        ["kevlar"] = -1, ["K_Texture"] = 0,
+        ["decal"] = -1, ["D_Texture"] = 0,
+        ["accs"] = -1, ["A_Texture"] = 0,
+        ["bags"] = -1, ["B_Texture"] = 0,
+        ["pants"] = -1, ["P_Texture"] = 0,
+        ["shoes"] = -1, ["S_Texture"] = 0,
         ["eye_COLOR"] = 2,
-        ["makeup"] = 0, ["makeup_OPACITY"] = 0.0, ["makeup_COLOR"] = 0, -- leave opacity at 1.0
-        ["lipstick"] = 0, ["lipstick_OPACITY"] = 0.0, ["lipstick_COLOR"] = 0, -- leave opacity at 1.0
-        ["eyebrows"] = 0, ["eyebrows_OPACITY"] = 0.0, ["eyebrows_COLOR"] = 0, -- leave opacity at 1.0
-        ["beard"] = 7, ["beard_OPACITY"] = 1.0, ["beard_COLOR"] = 1, -- leave opacity at 1.0
+        ["makeup"] = -1, ["makeup_OPACITY"] = 0.0, ["makeup_COLOR"] = 0, -- leave opacity at 1.0
+        ["lipstick"] = -1, ["lipstick_OPACITY"] = 0.0, ["lipstick_COLOR"] = 0, -- leave opacity at 1.0
+        ["eyebrows"] = -1, ["eyebrows_OPACITY"] = 0.0, ["eyebrows_COLOR"] = 0, -- leave opacity at 1.0
+        ["beard"] = -1, ["beard_OPACITY"] = 1.0, ["beard_COLOR"] = 1, -- leave opacity at 1.0
     },
 ```
 
 ## Issues
 |  Question |  Answer |
 |----       |----     |
-| The Sniper Rifles are in the `items.lua` but not in the actual resource.          | That's right. We will release this on a other date which will be the future repository for ALL addon items created by LENT. I give a massive thanks to `thelynxtrain#7652` for drawing some of these for me!      |
+| The Sniper Rifles are in the `items.lua` but not in the actual resource. | That's right. We will release this on a other date which will be the future repository for ALL addon items created by LENT. I give a massive thanks to `thelynxtrain#7652` for drawing some of these for me!|
 | Some Images are not showing up? | In general all images provided in the `Images` file should be sufficient for your server. Whether you decide to use our custom / existing images is up to you. |
 
 ## Roadmap
@@ -326,6 +314,8 @@ end exports('cyberBarRobbery', cyberBarRobbery)
 | Create glass items instead of bottles | ❌ |
 | Recode the Consumables part to account for change mentioned above | ❌ |
 | Restructure some of the files to lower file amount | ❌ |
+| Lower amount of usage in resource profiler | ❌ |
+| Check cop amount before attempting to start the heist | 💚 |
 
 ## Contributors
 |  Rank       |  Member       | ID                 | Qualifications                       |
@@ -336,4 +326,4 @@ end exports('cyberBarRobbery', cyberBarRobbery)
 ## Useful Links 
 Discord: https://discord.lanzaned.com<br>
 Github: https://github.lanzaned.com<br>
-Documentation: https://lanzaned-development.gitbook.io/lanzaned-development-or-documentation/
+Documentation: https://docs.lanzaned.com/

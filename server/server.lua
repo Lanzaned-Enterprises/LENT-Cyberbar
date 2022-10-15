@@ -1,5 +1,17 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+local cachedPoliceAmount = {}
+
+QBCore.Functions.CreateCallback('LENT:SERVER:GETCOPS', function(source, cb)
+	local amount = 0
+    for _, v in pairs(QBCore.Functions.GetQBPlayers()) do
+        if v.PlayerData.job.name == "police" and v.PlayerData.job.onduty then
+            amount = amount + 1
+        end
+    end
+    cachedPoliceAmount[source] = amount
+    cb(amount)
+end)
 
 RegisterServerEvent("LENT:CYBERBAR:DUTY:LOG", function()
 	local Player = QBCore.Functions.GetPlayer(source)
