@@ -2,13 +2,9 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 cyberbarlocation = {}
 
--- [[ When the resource starts create the peds ]] -- 
 AddEventHandler('onResourceStart', function(resourceName)
     if GetCurrentResourceName() == resourceName then
-        if Config.BlipToggle then
-            createBlip()
-            TriggerEvent("StartZones:LENT:Cyberbar")
-        end
+        TriggerEvent("StartZones:LENT:Cyberbar")
     end
 end)
 
@@ -36,6 +32,13 @@ AddEventHandler('onResourceStop', function(resourceName)
         for k, v in pairs(Zones.Stash) do
             exports["qb-target"]:RemoveZone(v["name"])
         end
+    end
+end)
+
+-- [[ QBCore ]] --
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+    if Config.BlipToggle then
+        createBlip()
     end
 end)
 

@@ -16,6 +16,21 @@ Zones.PZ = {
         ["label"] = "Toggle Duty",
         ["job"] = "cyberbar", -- < Job required to use target
     },
+    ["Register"] = {
+        ["name"] = "Register",
+        ["coords"] = vector3(333.55, -914.11, 29.26),
+        ["height"] = 0.4,
+        ["width"] = 0.45,
+        ["heading"] = 2,
+        ["debug"] = false,
+        ["minZ"] = 29.01,
+        ["maxZ"] = 29.41,
+        ["type"] = "client",
+        ["event"] = "LENT:CYBERBAR:CREATE:INVOICE",
+        ["icon"] = "fa-solid fa-clipboard",
+        ["label"] = "Request Payment",
+        ["job"] = "cyberbar", -- < Job required to use target
+    },
 }
 
 Zones.PC = {
