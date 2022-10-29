@@ -13,7 +13,7 @@
 
 ## IMPORTANT:
 - To install this resource a basic understanding of LUA is required.
-- To make full use of the resource you should follow the `Hot To Install` step for step.
+- To make full use of the resource you should follow the `How To Install` step for step.
 - Make Sure that you have all dependencies installed before hand.
 - Make sure that `LENT-Cyberbar` is started after the dependencies.
 
