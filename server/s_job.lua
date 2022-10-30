@@ -1,5 +1,9 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+-- [[ Payment ]] --
+
+
+-- [[ Drinks ]] --
 RegisterServerEvent("LENT:SERVER:AL:CREATE:POUR", function(itemname)
     local Player = QBCore.Functions.GetPlayer(source)
 

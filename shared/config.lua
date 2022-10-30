@@ -6,8 +6,9 @@ Config.BlipID = 484 -- radar_pickup_ghost
 Config.BlipColor = 61 -- Mulberry Pink
 Config.BlipSize = 1.0
 
--- [[ Cops ]] --
+-- [[ Robbery Sector ]] --
 Config.RequiredCops = 0
+Config.RobberyPayout = math.random(15000, 20000)
 
 -- [[ Item ]] --
 Config.Item = "purple_usb"

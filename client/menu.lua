@@ -1,5 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+
 RegisterNetEvent("LENT:CYBERBAR:OPENTAP", function()
     if QBCore.Functions.GetPlayerData().job.name == "cyberbar" then
         exports["qb-menu"]:openMenu({

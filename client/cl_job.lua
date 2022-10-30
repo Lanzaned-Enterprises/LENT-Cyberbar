@@ -32,6 +32,11 @@ RegisterNetEvent("LENT:CYBERBAR:DUTY:TOGGLE", function()
     end
 end)
 
+-- [[ Payment ]] --
+RegisterNetEvent("LENT:CYBERBAR:CREATE:INVOICE", function()
+    -- TriggerServerEvent("LENT:CYBERBAR:SERVER:CREATE:INVOICE", playerId, amount)
+end)
+
 -- [[ Stash ]] --
 RegisterNetEvent("LENT:CYBERBAR:OPEN:INGREDIENTS", function()
     if QBCore.Functions.GetPlayerData().job.name == "cyberbar" then

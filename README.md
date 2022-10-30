@@ -2,14 +2,13 @@
 *A job that serves as a heist at the same time. Allowing users to steal fake weapons to turn them into reality!*
 
 ## Dependencies
-- Map: https://www.gta5-mods.com/maps/mlo-cyber-bar-fivem-sp
-- qb-core
-- qb-smallresources
-- ps-dispatch
-- ps-ui
-- Progressbar
-- PolyZone
-- LENT-PedSpawner
+- [Map](https://www.gta5-mods.com/maps/mlo-cyber-bar-fivem-sp)
+- [qb-smallresources](https://github.com/qbcore-framework/qb-smallresources)
+- [ps-dispatch](https://github.com/Project-Sloth/ps-dispatch)
+- [ps-ui](https://github.com/Project-Sloth/ps-ui)
+- [Progressbar](https://github.com/qbcore-framework/progressbar)
+- [PolyZone](https://github.com/qbcore-framework/PolyZone)
+- [LENT-PedSpawner](https://github.com/Lanzaned-Enterprises/LENT-PedSpawner)
 
 ## IMPORTANT:
 - To install this resource a basic understanding of LUA is required.
@@ -1098,12 +1097,12 @@ end)
 ## Roadmap
 |  Subject |  Completed? |
 |----      |----         |
-| Automate the crafting recepies with args / params | ❌ |
+| Automate the crafting recepies with args / params | 💚 |
 | Add food items to the polyzone | ❌ |
 | Create glass items instead of bottles | ❌ |
 | Recode the Consumables part to account for change mentioned above | ❌ |
 | Restructure some of the files to lower file amount | ❌ |
-| Lower amount of usage in resource profiler | ❌ |
+| Lower amount of usage in resource profiler | 💚 |
 | Check cop amount before attempting to start the heist | 💚 |
 | Rehide the ped / hide the finish ped | ❌ |
 | Additional Config for the weapons | ❌ |

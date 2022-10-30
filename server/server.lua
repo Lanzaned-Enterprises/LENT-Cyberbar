@@ -35,7 +35,7 @@ RegisterServerEvent("LENT:CYBERBAR:PAYMENT", function()
 
 	if not Player then return end -- < Stops exploits with playerdata
 
-	Player.Functions.AddMoney('bank', 15000, "Bay Hardware")
+	Player.Functions.AddMoney('bank', Config.RobberyPayout, "Bay Hardware")
 	Player.Functions.RemoveItem("sniper_rifle1")
 	Player.Functions.RemoveItem("sniper_rifle2")
 	Player.Functions.RemoveItem("sniper_rifle3")
