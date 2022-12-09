@@ -1,8 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
--- [[ Payment ]] --
-
-
 -- [[ Drinks ]] --
 RegisterServerEvent("LENT:SERVER:AL:CREATE:POUR", function(itemname)
     local Player = QBCore.Functions.GetPlayer(source)
@@ -153,3 +150,34 @@ RegisterServerEvent("LENT:SERVER:HOT:PURPLEBOBA", function()
     Player.Functions.RemoveItem("blueberry")
     Player.Functions.AddItem("purplebobatea")
 end)
+
+RegisterServerEvent("LENT:CYBERBAR:DUTY:LOG", function()
+	local Player = QBCore.Functions.GetPlayer(source)
+
+	if not Player then return end -- < Stops exploits with playerdata
+
+	if Player.PlayerData.job.onduty then -- < 
+		SendDiscordWebhook(4115735, "Offduty Log | " .. Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. " ", Config.OnDutyMessage, "Script created by: https://discord.lanzaned.com")
+	elseif not Player.PlayerData.job.onduty then
+		SendDiscordWebhook(12255232, "Offduty Log | " .. Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. " ", Config.OffDutyMessage, "Script created by: https://discord.lanzaned.com")
+	end
+end)
+
+function SendDiscordWebhook(color, name, message, footer)
+    local content = {
+        {
+            ["color"] = color,
+            ["title"] = " " .. name .. " ",
+            ["description"] = message,
+            ["footer"] = {
+                ["text"] = " " .. footer .. " ",
+            },
+        }
+    }
+    PerformHttpRequest(Config.DISCORD_WEBHOOK, function(err, text, headers) end, 
+    'POST', json.encode({
+        username = Config.DISCORD_NAME, 
+        embeds = content, 
+        avatar_url = Config.DISCORD_IMAGE
+    }), { ['Content-Type'] = 'application/json '})
+end

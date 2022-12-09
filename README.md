@@ -4,11 +4,8 @@
 ## Dependencies
 - [Map](https://www.gta5-mods.com/maps/mlo-cyber-bar-fivem-sp)
 - [qb-smallresources](https://github.com/qbcore-framework/qb-smallresources)
-- [ps-dispatch](https://github.com/Project-Sloth/ps-dispatch)
-- [ps-ui](https://github.com/Project-Sloth/ps-ui)
 - [Progressbar](https://github.com/qbcore-framework/progressbar)
 - [PolyZone](https://github.com/qbcore-framework/PolyZone)
-- [LENT-PedSpawner](https://github.com/Lanzaned-Enterprises/LENT-PedSpawner)
 
 ## IMPORTANT:
 - To install this resource a basic understanding of LUA is required.
@@ -54,19 +51,6 @@
     - This resource can be used with decay inventories.
 ```lua
 	-- Cyber bar
-	['purple_usb'] 			 	= {['name'] = 'purple_usb', 			['label'] = 'Purple USB', 					['weight'] = 0, 		['type'] = 'item', 		['image'] = 'purpleusb.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 14.0,   ['description'] = 'Sketchy USB.. Marked for Seizure'},
-	['weapon_vandal']          	= {['name'] = 'weapon_vandal',         	['label'] = 'Vandal',       				['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '762_ammo',      		['image'] = 'rifle6.png',     			['unique'] = true,      ['useable'] = false,    ['description'] = 'A rapid-fire, magazine-fed automatic rifle designed for infantry use'},
-	['weapon_awp']          	= {['name'] = 'weapon_awp',         	['label'] = 'L115A1',       				['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      		['image'] = 'rifle5.png',     			['unique'] = true,      ['useable'] = false,    ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
-	['weapon_donut']          	= {['name'] = 'weapon_donut',         	['label'] = 'L115A1',       				['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      		['image'] = 'rifle2.png',     			['unique'] = true,      ['useable'] = false,    ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
-	['weapon_fang']          	= {['name'] = 'weapon_fang',         	['label'] = 'L115A1',       				['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      		['image'] = 'rifle3.png',     			['unique'] = true,      ['useable'] = false,    ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
-	['weapon_lynx']          	= {['name'] = 'weapon_lynx',         	['label'] = 'L115A1',       				['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      		['image'] = 'rifle4.png',     			['unique'] = true,      ['useable'] = false,    ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
-	['weapon_rain']          	= {['name'] = 'weapon_rain',         	['label'] = 'L115A1',       				['weight'] = 7000,      ['type'] = 'weapon',    ['ammotype'] = '308_ammo',      		['image'] = 'rifle1.png',     			['unique'] = true,      ['useable'] = false,    ['description'] = 'devastating powerful long-range weapon, with extreme accuracy and obscene stopping power'},
-	['sniper_rifle1'] 			= {['name'] = 'sniper_rifle1',			['label'] = 'Cyber Bar Rifle',				['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle1.png',				['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 14.0,  ['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
-	['sniper_rifle2'] 			= {['name'] = 'sniper_rifle2',			['label'] = 'Cyber Bar Rifle',				['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle2.png',				['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 14.0,  ['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
-	['sniper_rifle3'] 			= {['name'] = 'sniper_rifle3',			['label'] = 'Cyber Bar Rifle',				['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle3.png',				['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 14.0,  ['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
-	['sniper_rifle4'] 			= {['name'] = 'sniper_rifle4',			['label'] = 'Cyber Bar Rifle',				['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle4.png',				['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 14.0,  ['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
-	['sniper_rifle5'] 			= {['name'] = 'sniper_rifle5',			['label'] = 'Cyber Bar Rifle',				['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle5.png',				['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 14.0,  ['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
-	['sniper_rifle6'] 			= {['name'] = 'sniper_rifle6',			['label'] = 'Cyber Bar Rifle',				['weight'] = 7000,		['type'] = 'item',		['image'] = 'rifle6.png',				['unique'] = true,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 14.0,  ['description'] = 'Cyberbar Weapon... Marked for Seizure.'},
 	['alize'] 		 			= {['name'] = 'alize', 	  				['label'] = 'Alizé Wild Passion', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'alize.png', 				['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 7.0,   ['description'] = 'A bottle of Alizé Wild Passion'},
 	['bacon_cheese_fries'] 		= {['name'] = 'bacon_cheese_fries', 	['label'] = 'Bacon Cheese Fries', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'bacon_cheese_fries.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 7.0,   ['description'] = 'A basket of Bacon Cheese Fries'},
 	['bacon_pieces'] 		 	= {['name'] = 'bacon_pieces', 	  		['label'] = 'Bacon Pieces', 				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'bacon_pieces.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ["decay"] = 7.0,   ['description'] = 'Bacon bitties'},
@@ -140,24 +124,6 @@
 	['jagermeister']           	= {['name'] = 'jagermeister',            ['label'] = 'Bottle of Jagermeister',      ['weight'] = 1000,      ['type'] = 'item',      ['image'] = 'jagermeister.png',         ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = true,    ['combinable'] = nil,   ["decay"] = 7.0,   ['description'] = 'A bottle of Jagermeister'},
 ```
 - Add images from `Images` to `inventory/html/images`
-- Add the following to `qb-core/shared/weapons.lua`
-```lua
-	[`weapon_vandal`]          = {['name'] = 'weapon_vandal',          ['label'] = 'Vandal',                    ['ammotype'] = 'AMMO_RIFLE',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
-    [`weapon_awp`]          		= {['name'] = 'weapon_awp',          	['label'] = 'L115A1',                    ['ammotype'] = 'AMMO_SNIPER',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
-	[`weapon_donut`]          		= {['name'] = 'weapon_donut',          	['label'] = 'L115A1',                    ['ammotype'] = 'AMMO_SNIPER',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
-	[`weapon_fang`]          		= {['name'] = 'weapon_fang',         	['label'] = 'L115A1',                    ['ammotype'] = 'AMMO_SNIPER',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
-	[`weapon_lynx`]          		= {['name'] = 'weapon_lynx',         	['label'] = 'L115A1',                    ['ammotype'] = 'AMMO_SNIPER',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
-	[`weapon_rain`]          		= {['name'] = 'weapon_rain',         	['label'] = 'L115A1',                    ['ammotype'] = 'AMMO_SNIPER',    ['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
-```
-- Add the following to `qb-weapons/config.lua`
-```lua
-    ['weapon_vandal']           = 0.15,
-    ['weapon_awp']              = 0.15,
-    ['weapon_donut']            = 0.15,
-    ['weapon_fang']             = 0.15,
-    ['weapon_lynx']             = 0.15,
-    ['weapon_rain']             = 0.15,
-```
 - Add the following to `qb-smallresources/config.lua`
 ```lua
 -- ConsumablesEat
@@ -193,117 +159,6 @@
     ["cb_covenant"] = math.random(20, 40),
     ["cb_cortana"] = math.random(20, 40),
     ["cb_masterchief"] = math.random(20, 40),
-```
-- Add the folowing 2 snippets to `ps-dispatch`
-```lua
--- cl_events.lua
-local function cyberBarRobbery()
-    local currentPos = GetEntityCoords(PlayerPedId())
-    local locationInfo = getStreetandZone(currentPos)
-    local gender = GetPedGender()
-    TriggerServerEvent("dispatch:server:notify",{
-        dispatchcodename = "cyberBarRobbery", -- has to match the codes in sv_dispatchcodes.lua so that it generates the right blip
-        dispatchCode = "10-68",
-        firstStreet = locationInfo,
-        gender = gender,
-        model = nil,
-        plate = nil,
-        priority = 2, -- priority
-        firstColor = nil,
-        automaticGunfire = false,
-        origin = {
-            x = currentPos.x,
-            y = currentPos.y,
-            z = currentPos.z
-        },
-        dispatchMessage = 'Attempted Robbery', -- message
-        job = {"police", "bcso", "doc"} -- jobs that will get the alerts
-    })
-end exports('cyberBarRobbery', cyberBarRobbery)
-```
-```lua
--- sv_dispatchcodes.lua
-	["nightclubRobbery"] = {displayCode = '10-68', description = "Attempted Robbery", radius = 0, recipientList = {'police', 'bcso', 'doc'}, blipSprite = 766, blipColour = 1, blipScale = 1.5, blipLength = 2, sound = "robberysound", offset = "false", blipflash = "false" },
-```
-- You can use the following export for the alert `exports["ps-dispatch"]:cyberBarRobbery()`
-- Add the following snippets to `LENT-PedSpawner`
-```lua
-	["CyberbarHeist"] = {
-        ["coords"] = vector4(1642.65, 4846.56, 45.48, 22.63), -- The start Coordinatos of the first mission
-        
-        ["ped"] = "hc_hacker", -- The model of chracter that you interact with
-        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE", -- The animation they are playing
-        ["block_events"] = true, -- Will block the ped from moving when hit or bumped into
-        ["invincible"] = true, -- Makes the ped invincible
-        ["freeze"] = true, -- Freezes the ped in it's location
-  
-        ["weapon"] = false, -- Leave false when using Scenario
-        ["weapon_hash"] = "", -- Should be hash like "WEAPON_CARBINERIFLE"
-        ["hostile"] = false, -- Should the ped attack the player?
-
-        ["target"] = true, -- True = Allows interaction | False = Doesn't allow
-        ["type"] = "client",
-        ["event"] = "LENT:CYBERBAR:START", 
-        ["icon"] = "fa-solid fa-hotel", -- The icon that shows up
-        ["text"] = "Start Cyberbar Robbery", -- The text which is cheap "locale" support
-
-        -- [[ Do recommand that you use a clothing menu to get the right ID's ]] --
-        ["clothing"] = false, -- True if ped = "mp_m_freemode_01" || "mp_f_freemode_01" else leave false
-        ["mother"] = -1, ["father"] = -1, ["mix"] = 1.0,
-        ["hair"] = -1, ["HAIR_Texture"] = 0, ["HAIR_HIGHLIGHT"] = 0,
-        ["hands"] = -1, ["HA_Texture"] = 0,
-        ["undershirts"] = -1, ["U_Texture"] = 0,
-        ["tops"] = -1, ["T_Texture"] = 0,
-        ["kevlar"] = -1, ["K_Texture"] = 0,
-        ["decal"] = -1, ["D_Texture"] = 0,
-        ["accs"] = -1, ["A_Texture"] = 0,
-        ["bags"] = -1, ["B_Texture"] = 0,
-        ["pants"] = -1, ["P_Texture"] = 0,
-        ["shoes"] = -1, ["S_Texture"] = 0,
-        ["eye_COLOR"] = 2,
-        ["makeup"] = -1, ["makeup_OPACITY"] = 0.0, ["makeup_COLOR"] = 0, -- leave opacity at 1.0
-        ["lipstick"] = -1, ["lipstick_OPACITY"] = 0.0, ["lipstick_COLOR"] = 0, -- leave opacity at 1.0
-        ["eyebrows"] = -1, ["eyebrows_OPACITY"] = 0.0, ["eyebrows_COLOR"] = 0, -- leave opacity at 1.0
-        ["beard"] = -1, ["beard_OPACITY"] = 1.0, ["beard_COLOR"] = 1, -- leave opacity at 1.0
-    },
-    ["CyberbarHeist2"] = {
-        ["coords"] = vector4(-11.34, 6499.67, 31.5, 44.8), -- The start Coordinatos of the first mission
-        
-        ["ped"] = "cs_dale", -- The model of chracter that you interact with
-        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE", -- The animation they are playing
-        ["block_events"] = true, -- Will block the ped from moving when hit or bumped into
-        ["invincible"] = true, -- Makes the ped invincible
-        ["freeze"] = true, -- Freezes the ped in it's location
-  
-        ["weapon"] = false, -- Leave false when using Scenario
-        ["weapon_hash"] = "", -- Should be hash like "WEAPON_CARBINERIFLE"
-        ["hostile"] = false, -- Should the ped attack the player?
-
-        ["target"] = true, -- True = Allows interaction | False = Doesn't allow
-        ["type"] = "client",
-        ["event"] = "LENT:CYBERBAR:FINISH", 
-        ["icon"] = "fa-solid fa-gun", -- The icon that shows up
-        ["text"] = "Deliver Cyberbar Weapons", -- The text which is cheap "locale" support
-
-        -- [[ Do recommand that you use a clothing menu to get the right ID's ]] --
-        ["clothing"] = false, -- True if ped = "mp_m_freemode_01" || "mp_f_freemode_01" else leave false
-        ["mother"] = -1, ["father"] = -1, ["mix"] = 1.0,
-        ["hair"] = -1, ["HAIR_Texture"] = 0, ["HAIR_HIGHLIGHT"] = 0,
-        ["hands"] = -1, ["HA_Texture"] = 0,
-        ["undershirts"] = -1, ["U_Texture"] = 0,
-        ["tops"] = -1, ["T_Texture"] = 0,
-        ["kevlar"] = -1, ["K_Texture"] = 0,
-        ["decal"] = -1, ["D_Texture"] = 0,
-        ["accs"] = -1, ["A_Texture"] = 0,
-        ["bags"] = -1, ["B_Texture"] = 0,
-        ["pants"] = -1, ["P_Texture"] = 0,
-        ["shoes"] = -1, ["S_Texture"] = 0,
-        ["eye_COLOR"] = 2,
-        ["makeup"] = -1, ["makeup_OPACITY"] = 0.0, ["makeup_COLOR"] = 0, -- leave opacity at 1.0
-        ["lipstick"] = -1, ["lipstick_OPACITY"] = 0.0, ["lipstick_COLOR"] = 0, -- leave opacity at 1.0
-        ["eyebrows"] = -1, ["eyebrows_OPACITY"] = 0.0, ["eyebrows_COLOR"] = 0, -- leave opacity at 1.0
-        ["beard"] = -1, ["beard_OPACITY"] = 1.0, ["beard_COLOR"] = 1, -- leave opacity at 1.0
-    },
 ```
 - In your `inventory/server/main.lua` add this to the top
 ```lua
@@ -1091,26 +946,7 @@ end)
 ## Issues
 |  Question |  Answer |
 |----       |----     |
-| The Sniper Rifles are in the `items.lua` but not in the actual resource. | That's right. We will release this on a other date which will be the future repository for ALL addon items created by LENT. I give a massive thanks to `thelynxtrain#7652` for drawing some of these for me!|
-| Some Images are not showing up? | In general all images provided in the `Images` file should be sufficient for your server. Whether you decide to use our custom / existing images is up to you. |
-
-## Roadmap
-|  Subject |  Completed? |
-|----      |----         |
-| Automate the crafting recepies with args / params | 💚 |
-| Add food items to the polyzone | ❌ |
-| Create glass items instead of bottles | ❌ |
-| Recode the Consumables part to account for change mentioned above | ❌ |
-| Restructure some of the files to lower file amount | ❌ |
-| Lower amount of usage in resource profiler | 💚 |
-| Check cop amount before attempting to start the heist | 💚 |
-| Rehide the ped / hide the finish ped | ❌ |
-| Additional Config for the weapons | ❌ |
-| Setting for Weapons | ❌ |
-| Payout config for the robbery | ❌ |
-| Payment system for Cyberbar (Pay Directly not by invoice) | ❌ |
-| Parking Locations for Cyberbar (Employee Storage) | ❌ |
-| Vehicles + Liveries for delivery build in job | ❌ |
+|           |         |
 
 ## Contributors
 |  Rank       |  Member       | ID                 | Qualifications                       |

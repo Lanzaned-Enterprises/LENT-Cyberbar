@@ -1,5 +1,34 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
+Stash = {}
+Stash.Zone = { -- LENT:CYBERBAR:STASH
+    ["storageStash"] = {
+        ["name"] = "storageStash",
+        ["coords"] = vector3(338.6, -908.5, 29.26),
+        ["height"] = 0.9,
+        ["width"] = 1.2,
+        ["heading"] = 1,
+        ["debug"] = false,
+        ["minZ"] = 25.61,
+        ["maxZ"] = 29.01,
+        ["type"] = "client",
+        ["event"] = "LENT:CYBERBAR:STASH",
+        ["icon"] = "fa-solid fa-box",
+        ["label"] = "Product Storage",
+
+        ["stashname"] = "Cyberbar Storage",
+
+        ["jobrequired"] = true,
+        ["requirecid"] = false,
+        ["gangrequired"] = false,
+
+        ["gang"] = "",
+        ["job"] = "cyberbar",
+        ["cid"] = {""},
+        ["stashSize"] = 1250000,
+        ["stashSlots"] = 50,
+    },
+}
 
 RegisterNetEvent('LENT:CYBERBAR:STASH', function()
 
@@ -8,7 +37,7 @@ RegisterNetEvent('LENT:CYBERBAR:STASH', function()
     local PlayerGang = PlayerData.gang.name
     local canOpen = false
 
-    for k, v in pairs(Zones.Stash) do
+    for k, v in pairs(Stash.Zone) do
         if Config.PoliceCanOpen then 
             if PlayerJob == "police" then
                 canOpen = true
