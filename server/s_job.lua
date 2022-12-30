@@ -56,7 +56,7 @@ RegisterServerEvent("LENT:SERVER:AL:COVENANT", function()
     Player.Functions.RemoveItem("cb_hpnotiq")
     Player.Functions.RemoveItem("cb_pinkvodka")
     Player.Functions.RemoveItem("mioberrypome")
-    Player.Functions.AddItem("cb_promethean")
+    Player.Functions.AddItem("cb_covenant")
 end)
 
 RegisterServerEvent("LENT:SERVER:AL:CORTANA", function()
