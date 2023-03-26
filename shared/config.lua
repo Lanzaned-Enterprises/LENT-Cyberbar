@@ -6,10 +6,6 @@ Config.BlipID = 484 -- radar_pickup_ghost
 Config.BlipColor = 61 -- Mulberry Pink
 Config.BlipSize = 1.0
 
--- [[ Robbery Sector ]] --
-Config.RequiredCops = 0
-Config.RobberyPayout = math.random(15000, 20000)
-
 -- [[ Item ]] --
 Config.Item = "purple_usb"
 
@@ -48,11 +44,3 @@ Config.ProgressBarMax = 8400
 
 Config.ProductCreateMin = 2500
 Config.ProductCreateMax = 6000
-
--- [[ Discord ]] --
-Config.OnDutyMessage = "Has gone onduty."
-Config.OffDutyMessage = "Has gone offduty."
-
-Config.DISCORD_WEBHOOK = ""
-Config.DISCORD_NAME = "LENT - Cyberbar"
-Config.DISCORD_IMAGE = "https://cdn.discordapp.com/attachments/1026175982509506650/1026176123928842270/Lanzaned.png"

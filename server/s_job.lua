@@ -152,14 +152,16 @@ RegisterServerEvent("LENT:SERVER:HOT:PURPLEBOBA", function()
 end)
 
 RegisterServerEvent("LENT:CYBERBAR:DUTY:LOG", function()
+    local OnDutyMessage = "Has gone onduty."
+    local OffDutyMessage = "Has gone offduty."
 	local Player = QBCore.Functions.GetPlayer(source)
 
 	if not Player then return end -- < Stops exploits with playerdata
 
 	if Player.PlayerData.job.onduty then -- < 
-		SendDiscordWebhook(4115735, "Offduty Log | " .. Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. " ", Config.OnDutyMessage, "Script created by: https://discord.lanzaned.com")
+		SendDiscordWebhook(4115735, "Offduty Log | " .. Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. " ", OnDutyMessage, "Script created by: https://discord.lanzaned.com")
 	elseif not Player.PlayerData.job.onduty then
-		SendDiscordWebhook(12255232, "Offduty Log | " .. Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. " ", Config.OffDutyMessage, "Script created by: https://discord.lanzaned.com")
+		SendDiscordWebhook(12255232, "Offduty Log | " .. Player.PlayerData.charinfo.firstname .. " " .. Player.PlayerData.charinfo.lastname .. " ", OffDutyMessage, "Script created by: https://discord.lanzaned.com")
 	end
 end)
 

@@ -9,14 +9,12 @@ local ZoneCreated = {}
 AddEventHandler('onResourceStart', function(resourceName)
     if GetCurrentResourceName() == resourceName then
         DeleteZones()
-        DeleteHeistZones()
     end
 end)
 
 AddEventHandler('onResourceStop', function(resourceName)
     if GetCurrentResourceName() == resourceName then
         DeleteZones()
-        DeleteHeistZones()
         removeBlips()
     end
 end)
